@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+
+}
+
+body{
+	font-family: 'Muli', sans-serif;
+	width: 50%;
+	height: 100vh;
+	overflow: hidden;
+}
+header {
+	font-family: 'Quicksand', sans-serif;
+	margin: 10px;
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	text-align: center;
+	z-index: 1000;
+}
+
+.logo{
+	margin-left: 140px;
+	width: 60%;
+	height: 50px;
+	background-color: ghostwhite;
+	box-shadow: 5px 3px 6px #888888;
+	
+}
+textarea{
+	width: 100%;
+	height: 30px;
+	background-color: blue;
+}
+img{
+	border-radius: 20px;
+}
+.userProfile strong{
+	font-size: 20px;
+}
+.userProfile img{
+	height:10px: ;
+	width: 5px;  
+	position: relative;
+	top: -0.5em;
+	margin-right: 10px;
+}
+.userProfile{
+	display: flex;
+	width: 15%;
+	height: 30px;
+	box-shadow: 5px 3px 6px #888888;
+	background-color: ghostwhite;
+	padding: 12px 15px;
+}
+
+.sideNav{
+	position: absolute;
+	float: left;
+	color: black;
+	width: 100%;
+	height: 100%;
+	background: white;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	
+}
+.userProfile img{
+	flex-direction: row;
+	width: 50px;
+	height: 50px;
+}
+.navItem a,ul{
+	cursor: pointer;
+	color: white;
+	text-decoration: none;
+	list-style-type: none;
+	font: 20px bold;
+}
+.navItem:hover{
+	background-color: lightgray;
+}
+.active, .navItem:hover {
+  background-color: #667;
+  color: white;
+}
+#name{
+	position: absolute;
+	top: 50px;
+	left: 20px;
+	font-size: 12px;
+	display: inline-block;
+}
+#navBar{
+	margin-top: 30px;
+	display: inline-block;
+	width: 200px;
+	min-height: 20%;
+	position: absolute;
+	top: 170px;
+}
+.navItem{
+	color: black;
+	padding: 9px;
+	letter-spacing: 2px;
+	width: inherit;
+	height: 50px;
+	align-content: center;
+	margin:18px ;
+}
+
+.contentContainer{
+	padding: 5px;
+	position: absolute;
+	float: right;
+	left: 200px;
+	color: black;
+	width: 75em;
+	height: 90%;
+	margin-top:70px;
+	background-color: whitesmoke;
+}
+#sections{
+	width:80%;
+	background-color: ;
+	position: absolute;
+	left: 80px;
+	height: 85%;
+	display: flex;
+	justify-content: space-between;
+}
+#myBtn {
+	word-spacing:5px;
+	width: 100px;
+	height: 20px;
+	cursor: pointer;
+  padding: 2px 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  color: Black;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+#recBtn {
+	word-spacing:5px;
+	width: 300px;
+	height: 50px;
+	cursor: pointer;
+  padding: 2px 5px;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+#myBtn2 {
+	word-spacing:5px;
+	width: 300px;
+	height: 50px;
+	cursor: pointer;
+  padding: 2px 5px;
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.closeRec {
+  color: #aaaaaa;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.closeRec:hover,
+.closeRec:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.users,.records,.setShow{
+	padding: 2px 5px;
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	height: 500px;
+	padding: 10px;
+	color: black;
+}
+
+.users h1{
+	position: relative;
+	text-align: center;
+}
+
+.newUser{
+	
+	cursor: pointer;
+	width: 300px;
+	height: 200px;
+	border-radius: 12px;
+	font:2rem bold ;
+	background-color: deepskyblue;
+	text-align: center;
+	padding: 2px 5px;
+	margin: 5px;
+	display:block;
+	align-items: center;
+}
+.vuserModal{
+	color: black;
+	margin-top: 25px;
+	background-color: ;
+	cursor: pointer;
+	width: 100%;
+	min-height: 150px;
+	font:12px bold ;
+}
+.vuserModal h2{
+
+	border-bottom: 5px lightblue solid;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.newUser-modal{
+  	position: fixed;
+  	z-index: 1;
+	left: 500px;
+	top: 10px;
+    width: 400px;
+    height: 400px;
+    background-color: azure;
+    color: black;
+    padding: 15px;
+    margin: 20px 15px;
+    display: flex;
+    flex-direction: column;
+}
+.newRecord-modal{
+  	position: fixed;
+  	z-index: 1;
+	left: 500px;
+	top: 10px;
+    width: 400px;
+    height: 400px;
+    background-color: azure;
+    color: black;
+    padding: 15px;
+    margin: 20px 15px;
+    display: flex;
+    flex-direction: column;
+}
+form {
+    width: 100%;
+    min-height: 150px;
+    margin: 2px auto;
+    text-align: left;
+    padding: 20px;
+}
+
+.input-group {
+    margin: 10px 0px 10px 0px;
+}
+.input-group label {
+    display: block;
+    text-align: left;
+    margin: 3px;
+}
+.input-group input {
+    height: 30px;
+    width: 93%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.btn {
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    background: #5F9EA0;
+    border: none;
+    border-radius: 5px;
+}
+
+.edit_btn {
+    text-decoration: none;
+    padding: 2px 5px;
+    background: #2E8B57;
+    color: white;
+    border-radius: 3px;
+}
+
+.del_btn {
+    text-decoration: none;
+    padding: 2px 5px;
+    color: white;
+    border-radius: 3px;
+    background: #800000;
+}
+table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+ tr {
+    border-bottom: 1px solid #dddddd;
+}
+ tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+ tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
